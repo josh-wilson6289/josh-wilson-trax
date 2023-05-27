@@ -29,6 +29,7 @@ Route::get('/user', function (Request $request) {
 
 // Mock endpoint to get all cars for the logged in user
 
+// need to use api 
 Route::get('/mock-get-cars', function(Request $request) {
     return [
         'data' => [
