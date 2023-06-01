@@ -13,6 +13,8 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
+        
+        // I need to create a hasMany relationship between user, cars, and trips.
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');

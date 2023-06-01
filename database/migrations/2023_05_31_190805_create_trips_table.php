@@ -18,7 +18,13 @@ return new class extends Migration
             $table->timestamps();
             $table->string('date');
             $table->float('miles');
-            $table->foreign('car_id')->references('id')->on('cars');
+            
+            // I know that this column should reference the cars table,
+            // but I'm having a hard time getting the below code to work.
+            // For now, I'm just creating the 'car_id' column so the code runs.
+
+            // $table->foreign('car_id')->references('id')->on('cars');
+            $table->string('car_id');
         });
     }
 
